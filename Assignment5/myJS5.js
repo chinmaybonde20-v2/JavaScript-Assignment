@@ -8,7 +8,11 @@ var text = document.getElementById('userInput').value
 
   for (let i = 0; i < s.length; i++) {
     switch (s[i]) {
-      case "":
+      default:
+        // console.log(s[i]);
+        s[i] = String.fromCharCode(s[i].charCodeAt()+1);
+        
+      case " ":
         break;
 
       case "z":
@@ -17,9 +21,7 @@ var text = document.getElementById('userInput').value
       case "Z":
         s[i] = "A";
 
-      default:
-        // console.log(s[i]);
-        s[i] = String.fromCharCode(s[i].charCodeAt()+1);
+      
     }
   }
   // return s.join("");
