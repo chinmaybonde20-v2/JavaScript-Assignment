@@ -24,10 +24,8 @@ var text = document.getElementById('userInput').value
       
     }
   }
-  // return s.join("");
-  // alert(s.join(""))
+
   document.getElementById("answer").innerHTML=s.join("")
 };
 
-// console.log(userText("ABC"));
 
